@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root { /*para referenciar as cores utilizadas, facilita para todas as variáveis*/
+    --black: #000000;
+    /*para utilizar: var(--black)*/
+    --darkblue: #14213D;
+    --yellow: #FCA311;
+    --grey: #E5E5E5;
+    --white: #FFFFFF;
+}
+
+* { /*padrão para o projeto inteiro*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Akshar', sans-serif;
+}
+
+nav {
+    width: 60%;
+    /*background-color: bisque;*/
+    margin: 1rem;
+}
+
+/*nav ul { -- usaria caso tivesse lista (com palavras) dentro do nav)
+    list-style: none;
+    display: flex; /* dispõe um ao lado do outro*/
+    /*justify-content: space-between; /* cria espaço igual entre os itens*/
+    /*justify-content: baseline;
+    /*não colocar largura em tamanhos fixos, a porcentagem sempre puxa os valores que estão acima (disponíveis), não da tela toda*/
+    /*para larguras utilizar % ou vw, px é recomendado para itens com tamanho fixo*/
+    /*width: 50vw;
+}*/
+
+/*nav ul li a {  -- usaria caso tivesse lista (com palavras) dentro do nav)
+    font-size: 1rem;*/
+    /*rem = o tamanho da letra M maiúscula do dispositivo visualizado, geralmente = 16px*/
+    /*text-decoration: none;
+    color: #ff6600;
+    background-color: #151313;
+    padding: 1rem; /*gera espaçamento da borda para dentro*/
+    /*margin: 1rem; /*da borda para o lado de fora*/
+    /*border: 3px solid white;
+    
+}*/
+
+.icones {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+h1, h2 {
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;    
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 10px 10px; /*valores no sentido horário*/
+}
+
+img {
+    border-radius: 20%; /*arredonda as bordas*/
+    height: 150px; /*quando for mexer na imagem, mexer apenas em 1 dos 2 eixos, pois irá ser proporcional*/
+    width: 160px;     
+    
+
+}
+
+/*h1 {
+    font-size: max(5vw, 3.5rem);
+}*/
