@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 :root { /*para referenciar as cores utilizadas, facilita para todas as variáveis*/
-    --black: #000000;
-    /*para utilizar: var(--black)*/
-    --darkblue: #14213D;
-    --yellow: #FCA311;
-    --grey: #E5E5E5;
-    --white: #FFFFFF;
+    --charcoal: #2F3E46;
+    /*para utilizar: var(--charcoal)*/
+    --darkSlateGray: #354F52;
+    --hookersGreen: #52796F;
+    --darkSeaGreen: #84A98C;
+    --ashGray: #CAD2C5;
 }
 
 * { /*padrão para o projeto inteiro*/
@@ -21,8 +22,7 @@
 
 nav {
     width: 60%;
-    /*background-color: bisque;*/
-    margin: 1rem;
+    margin: .5rem;
 }
 
 /*nav ul { -- usaria caso tivesse lista (com palavras) dentro do nav)
@@ -48,19 +48,23 @@ nav {
 }*/
 
 .icones {
+    display: inline;
     height: 20px;
     width: 20px;
-    margin-top: 5px;
+    margin-left: 2rem;
+    margin: 1rem;
 }
 
 body {
-    background-color: var(--grey);
+    background-color: var(--ashGray);
 }
 
-h1, h2 {
+h1 {
     margin: 10px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;    
+    font-size: max(5vw, 3.5rem);
+    font-family: 'Square Peg', cursive;
+    text-align: center;   
+    color: var(--charcoal); 
 }
 
 .container {
@@ -70,18 +74,71 @@ h1, h2 {
     align-items: center;
 }
 
+.p-30 {
+    padding: 30px;
+}
+
+.tm-social { 
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+}
+
+.camposForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerAdress {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    resize: none;
+    border: 0;
+    width: 80%;
+}
+
 p {
     margin: 10px 10px; /*valores no sentido horário*/
 }
 
-img {
-    border-radius: 20%; /*arredonda as bordas*/
-    height: 150px; /*quando for mexer na imagem, mexer apenas em 1 dos 2 eixos, pois irá ser proporcional*/
-    width: 160px;     
-    
-
+.imagem {
+    border-radius: 50%; /*arredonda as bordas*/
+    height: 145px;
+    /*quando mexer na imagem, mexer apenas em 1 dos 2 eixos, pois irá ser proporcional*/
+    width: 150px;  
+    border: 2px solid var(--darkSlateGray);   
+    padding: .25rem; 
 }
 
-/*h1 {
-    font-size: max(5vw, 3.5rem);
-}*/
+h2 {
+    /* font-size: max(5vw, 3.5rem); */
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    color: var(--darkSlateGray);
+}
+
+.subtitle {
+    margin: 20px 10px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.justify {
+    text-align: justify;
+}
+
