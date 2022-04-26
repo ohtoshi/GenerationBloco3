@@ -94,10 +94,22 @@ h1 {
     flex-direction: column;
 }
 
+label {
+    color:var(--charcoal);
+}
+
 input, textarea {
     resize: none;
     border: 0;
     width: 80%;
+    outline: 0; /*remove a borda preta ao redor da textarea*/
+    color: var(--hookersGreen);
+    background-color: var(--ashGray);
+    border-bottom: 1.5px solid var(--charcoal);
+}
+
+button {
+    margin-top: 20px;
 }
 
 p {
